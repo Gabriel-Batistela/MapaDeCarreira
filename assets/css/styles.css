@@ -271,9 +271,10 @@ body {
 
 .skill-bar {
     height: 100%;
+    width: 0;
     background: linear-gradient(90deg, #066aff 0%, #8cdeff 100%);
     border-radius: 4px;
-    transition: width 1s ease;
+    transition: width 1.5s cubic-bezier(0.2, 1, 0.2, 1);
 }
 
 .other-skills {

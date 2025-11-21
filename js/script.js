@@ -1,13 +1,23 @@
-window.addEventListener('load', () => {
-            const skillBars = document.querySelectorAll('.skill-bar');
-            skillBars.forEach(bar => {
-                const width = bar.style.width;
-                bar.style.width = '0';
-                setTimeout(() => {
-                    bar.style.width = width;
-                }, 100);
-            });
+document.addEventListener("DOMContentLoaded", () => {
+    const skillBars = document.querySelectorAll('.skill-bar');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const bar = entry.target;
+                const targetWidth = bar.getAttribute('data-width');
+                bar.style.width = targetWidth;
+                observer.unobserve(bar);
+            }
         });
+    }, {
+        threshold: 0.1
+    });
+
+    skillBars.forEach(bar => {
+        observer.observe(bar);
+    });
+});
 
         // API Sienna
 if (!document.querySelector('script[src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js"]')) {
