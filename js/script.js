@@ -1,15 +1,16 @@
 window.addEventListener('load', () => {
             const skillBars = document.querySelectorAll('.skill-bar');
             skillBars.forEach(bar => {
-                const width = bar.style.width;
+                const targetWidth = bar.getAttribute('data-width');
                 bar.style.width = '0';
                 setTimeout(() => {
-                    bar.style.width = width;
+                    bar.style.width = targetWidth;
                 }, 100);
             });
         });
 
-        // API Sienna
+// API Sienna
+
 if (!document.querySelector('script[src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js"]')) {
   const s = document.createElement("script");
   s.src = "https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js";

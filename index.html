@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Mapa de carreira, Currículo, Skills">
-    <meta author="Gabriel Henrique Ruas Batistela">
+    <meta name="author" content="Gabriel Henrique Ruas Batistela">
     <link rel="shortcut icon" href="./assets/img/icon-carreira.png" type="image/x-icon">
     <title>Mapa de Carreira - Gabriel Henrique Ruas Batistela </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <div class="profile-image">
             <img src="./assets/img/foto_gabriel.png"
                 alt="Foto de Perfil de um rapaz jovem, branco com cabelo castanho cacheado curto, utilizando óculos com armação preta arredondada. Está com um bigode feito e sorrindo levemente. Utiliza uma camiseta azul escura.">
@@ -21,178 +21,190 @@
         <div class="header-content">
             <h1>GABRIEL HENRIQUE RUAS BATISTELA</h1>
             <p>Estudante de Análise e Desenvolvimento de Sistemas.</p>
-            <div class="contact">Contato: gabrielhruas@gmail.com</div>
+            
+            <address class="contact" style="font-style: normal;">
+                Contato: gabrielhruas@gmail.com
+            </address>
         </div>
-        <div class="social-midias">
-            <a href="https://www.linkedin.com/in/gabrielbatistela/" target="_blank"><i class="fab fa-linkedin"></i>
+        
+        <nav class="social-midias" aria-label="Redes Sociais">
+            <a href="https://www.linkedin.com/in/gabrielbatistela/" target="_blank">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
                 <p>Meu Linkedin</p>
             </a>
-            <a href="https://github.com/Gabriel-Batistela" target="_blank"><i class="fab fa-github"></i>
+            <a href="https://github.com/Gabriel-Batistela" target="_blank">
+                <i class="fab fa-github" aria-hidden="true"></i>
                 <p>Meu Github</p>
             </a>
-        </div>
-    </div>
+        </nav>
+    </header>
 
     <div class="container">
-        <div class="main-content">
-            <h2 class="section-title">Prazer em Conhecer</h2>
+        <main class="main-content">
+            
+            <section id="sobre">
+                <h2 class="section-title">Prazer em Conhecer</h2>
 
-            <div class="intro-text">
-                Sou Gabriel, estudante de Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia. Tenho
-                grande interesse pela área de desenvolvimento web, onde posso unir lógica, design e criatividade para
-                transformar ideias em experiências reais. Estou sempre disposto à aprender novas linguagens e
-                ferramentas, pois o estudo para mim é a chave para construir algo maior. Busco aplicar meus
-                conhecimentos em projetos que possam impactar positivamente a vida das pessoas.
-            </div>
-
-            <a href="./assets/curriculo/GABRIEL HENRIQUE RUAS BATISTELA - CV.docx.pdf" class="download-btn"
-                target="_blank">Baixar o meu CV</a>
-
-            <h2 class="section-title" style="margin-top: 50px;">Mapa de Carreira</h2>
-
-            <div class="career-level">
-                <h3>Estágio em desenvolvimento Web</h3>
-                <p class="career-description">
-                    Quero ingressar no área de tecnologia. Aprender as melhores práticas para me tornar um desenvolvedor
-                    júnior e trabalhar em conjunto para ganhar e trocar experiências com as mais diversas áreas.
-                </p>
-
-                <div class="soft-skills-section">
-                    <h4>Soft Skills exigidas para essa carreira:</h4>
-                    <ul>
-                        <li>Proatividade</li>
-                        <li>Curiosidade e vontade de aprender</li>
-                        <li>Trabalho em equipe com responsabilidade</li>
-                    </ul>
+                <div class="intro-text">
+                    Sou Gabriel, estudante de Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia. Tenho
+                    grande interesse pela área de desenvolvimento web, onde posso unir lógica, design e criatividade para
+                    transformar ideias em experiências reais. Estou sempre disposto a aprender novas linguagens e
+                    ferramentas, pois o estudo para mim é a chave para construir algo maior. Busco aplicar meus
+                    conhecimentos em projetos que possam impactar positivamente a vida das pessoas.
                 </div>
 
-                <div class="roadmap-section">
-                    <h4>Roadmap de Aprendizado:</h4>
-                    <div class="tech-tags">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Git</span>
+                <a href="./assets/curriculo/GABRIEL HENRIQUE RUAS BATISTELA - CV.docx.pdf" class="download-btn"
+                    target="_blank">Baixar o meu CV</a>
+            </section>
+
+            <section id="roadmap" style="margin-top: 50px;">
+                <h2 class="section-title">Mapa de Carreira</h2>
+
+                <article class="career-level">
+                    <h3>Estágio em desenvolvimento Web</h3>
+                    <p class="career-description">
+                        Quero ingressar no área de tecnologia. Aprender as melhores práticas para me tornar um desenvolvedor
+                        júnior e trabalhar em conjunto para ganhar e trocar experiências com as mais diversas áreas.
+                    </p>
+
+                    <div class="soft-skills-section">
+                        <h4>Soft Skills exigidas para essa carreira:</h4>
+                        <ul>
+                            <li>Proatividade</li>
+                            <li>Curiosidade e vontade de aprender</li>
+                            <li>Trabalho em equipe com responsabilidade</li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-            <div class="career-level">
-                <h3>Desenvolvedor Web Júnior</h3>
-                <p class="career-description">
-                    Quero desenvolver as melhores práticas para me tornar um desenvolvedor Pleno. Busco aprender com
-                    profissionais experientes, entregando com qualidade e evoluindo tecnicamente todos os dias.
-                </p>
 
-                <div class="soft-skills-section">
-                    <h4>Soft Skills exigidas para essa carreira:</h4>
-                    <ul>
-                        <li>Comunicação clara e objetiva</li>
-                        <li>Organização pessoal e foco</li>
-                        <li>Curiosidade e Aprendizado Contínuo</li>
-                        <li>Gerenciamento de Tarefas</li>
-                    </ul>
-                </div>
-
-                <div class="roadmap-section">
-                    <h4>Roadmap de Aprendizado:</h4>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">SASS</span>
-                        <span class="tech-tag">Redux</span>
+                    <div class="roadmap-section">
+                        <h4>Roadmap de Aprendizado:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </article>
 
-            <div class="career-level">
-                <h3>Desenvolvedor Web Pleno</h3>
-                <p class="career-description">
-                    Quero ser um profissional confiável que resolve problemas com autonomia e propõe soluções. Desejo
-                    colaborar com outras áreas e contribuir com ideias técnicas para evolução dos projetos
-                </p>
+                <article class="career-level">
+                    <h3>Desenvolvedor Web Júnior</h3>
+                    <p class="career-description">
+                        Quero desenvolver as melhores práticas para me tornar um desenvolvedor Pleno. Busco aprender com
+                        profissionais experientes, entregando com qualidade e evoluindo tecnicamente todos os dias.
+                    </p>
 
-                <div class="soft-skills-section">
-                    <h4>Soft Skills exigidas para essa carreira:</h4>
-                    <ul>
-                        <li>Autonomia e proatividade</li>
-                        <li>Pensamento analítico</li>
-                        <li>Capacidade de dar e receber feedbacks</li>
-                        <li>Gestão do tempo e organização</li>
-                    </ul>
-                </div>
-
-                <div class="roadmap-section">
-                    <h4>Roadmap de Aprendizado:</h4>
-                    <div class="tech-tags">
-                        <span class="tech-tag">APIs RESTful</span>
-                        <span class="tech-tag">Git Avançado</span>
-                        <span class="tech-tag">Clean Code</span>
-                        <span class="tech-tag">Testes Automatizados</span>
+                    <div class="soft-skills-section">
+                        <h4>Soft Skills exigidas para essa carreira:</h4>
+                        <ul>
+                            <li>Comunicação clara e objetiva</li>
+                            <li>Organização pessoal e foco</li>
+                            <li>Curiosidade e Aprendizado Contínuo</li>
+                            <li>Gerenciamento de Tarefas</li>
+                        </ul>
                     </div>
-                </div>
-            </div>
 
-            <div class="career-level">
-                <h3>Desenvolvedor Web Sênior</h3>
-                <p class="career-description">
-                    Quero ser referência técnica, contribuindo para decisões de arquitetura, revisão de código e
-                    mentoria de outros devs. Busco criar soluções escaláveis com foco em performance e segurança.
-                </p>
-
-                <div class="soft-skills-section">
-                    <h4>Soft Skills exigidas para essa carreira:</h4>
-                    <ul>
-                        <li>Liderança técnica e mentoria</li>
-                        <li>Boa comunicação com áreas não técnicas</li>
-                        <li>Pensamento sistêmico</li>
-                        <li>Tomada de decisões assertivas</li>
-                    </ul>
-                </div>
-
-                <div class="roadmap-section">
-                    <h4>Roadmap de Aprendizado:</h4>
-                    <div class="tech-tags">
-                        <span class="tech-tag">DevOps</span>
-                        <span class="tech-tag">Code Review</span>
-                        <span class="tech-tag">Arquitetura de Software</span>
-                        <span class="tech-tag">Segurança</span>
-                        <span class="tech-tag">performance</span>
+                    <div class="roadmap-section">
+                        <h4>Roadmap de Aprendizado:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">SASS</span>
+                            <span class="tech-tag">Redux</span>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </article>
 
-            <div class="career-level">
-                <h3>Tech Lead</h3>
-                <p class="career-description">
-                    Quero liderar times técnicos com empatia e foco em resultados. Desejo conectar visão de produto com
-                    execução técnica, garantindo qualidade, alinhamento e colaboração entre as áreas.
-                </p>
+                <article class="career-level">
+                    <h3>Desenvolvedor Web Pleno</h3>
+                    <p class="career-description">
+                        Quero ser um profissional confiável que resolve problemas com autonomia e propõe soluções. Desejo
+                        colaborar com outras áreas e contribuir com ideias técnicas para evolução dos projetos
+                    </p>
 
-                <div class="soft-skills-section">
-                    <h4>Soft Skills exigidas para essa carreira:</h4>
-                    <ul>
-                        <li>Gestão de equipe e escuta ativa</li>
-                        <li>Visão técnica e estratégica</li>
-                        <li>Capacidade de priorização</li>
-                        <li>Gestão de Conflitos</li>
-                    </ul>
-                </div>
-
-                <div class="roadmap-section">
-                    <h4>Roadmap de Aprendizado:</h4>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Scrum/Kanban</span>
-                        <span class="tech-tag">Gestão de Sprint</span>
-                        <span class="tech-tag">Mentoria</span>
-                        <span class="tech-tag">Design de Times</span>
-                        <span class="tech-tag">Arquitetura Escalável</span>
+                    <div class="soft-skills-section">
+                        <h4>Soft Skills exigidas para essa carreira:</h4>
+                        <ul>
+                            <li>Autonomia e proatividade</li>
+                            <li>Pensamento analítico</li>
+                            <li>Capacidade de dar e receber feedbacks</li>
+                            <li>Gestão do tempo e organização</li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="sidebar">
-            <div class="sidebar-box">
+                    <div class="roadmap-section">
+                        <h4>Roadmap de Aprendizado:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">APIs RESTful</span>
+                            <span class="tech-tag">Git Avançado</span>
+                            <span class="tech-tag">Clean Code</span>
+                            <span class="tech-tag">Testes Automatizados</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="career-level">
+                    <h3>Desenvolvedor Web Sênior</h3>
+                    <p class="career-description">
+                        Quero ser referência técnica, contribuindo para decisões de arquitetura, revisão de código e
+                        mentoria de outros devs. Busco criar soluções escaláveis com foco em performance e segurança.
+                    </p>
+
+                    <div class="soft-skills-section">
+                        <h4>Soft Skills exigidas para essa carreira:</h4>
+                        <ul>
+                            <li>Liderança técnica e mentoria</li>
+                            <li>Boa comunicação com áreas não técnicas</li>
+                            <li>Pensamento sistêmico</li>
+                            <li>Tomada de decisões assertivas</li>
+                        </ul>
+                    </div>
+
+                    <div class="roadmap-section">
+                        <h4>Roadmap de Aprendizado:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">DevOps</span>
+                            <span class="tech-tag">Code Review</span>
+                            <span class="tech-tag">Arquitetura de Software</span>
+                            <span class="tech-tag">Segurança</span>
+                            <span class="tech-tag">performance</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="career-level">
+                    <h3>Tech Lead</h3>
+                    <p class="career-description">
+                        Quero liderar times técnicos com empatia e foco em resultados. Desejo conectar visão de produto com
+                        execução técnica, garantindo qualidade, alinhamento e colaboração entre as áreas.
+                    </p>
+
+                    <div class="soft-skills-section">
+                        <h4>Soft Skills exigidas para essa carreira:</h4>
+                        <ul>
+                            <li>Gestão de equipe e escuta ativa</li>
+                            <li>Visão técnica e estratégica</li>
+                            <li>Capacidade de priorização</li>
+                            <li>Gestão de Conflitos</li>
+                        </ul>
+                    </div>
+
+                    <div class="roadmap-section">
+                        <h4>Roadmap de Aprendizado:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Scrum/Kanban</span>
+                            <span class="tech-tag">Gestão de Sprint</span>
+                            <span class="tech-tag">Mentoria</span>
+                            <span class="tech-tag">Design de Times</span>
+                            <span class="tech-tag">Arquitetura Escalável</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <section class="sidebar-box">
                 <h3 class="sidebar-title">Hard Skills</h3>
 
                 <p style="margin-bottom: 20px; color: #555;">
@@ -206,7 +218,7 @@
                             <span>HTML5</span>
                         </div>
                         <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 85%"></div>
+                            <div class="skill-bar" data-width="85%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -214,7 +226,7 @@
                             <span>CSS3</span>
                         </div>
                         <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 70%"></div>
+                            <div class="skill-bar" data-width="70%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -222,7 +234,7 @@
                             <span>JavaScript</span>
                         </div>
                         <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 50%"></div>
+                            <div class="skill-bar" data-width="50%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -230,7 +242,7 @@
                             <span>ReactJS</span>
                         </div>
                         <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 35%"></div>
+                            <div class="skill-bar" data-width="35%"></div>
                         </div>
                     </div>
                 </div>
@@ -243,7 +255,7 @@
                             <span>Python/Flask</span>
                         </div>
                         <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 25%"></div>
+                            <div class="skill-bar" data-width="25%"></div>
                         </div>
                     </div>
                 </div>
@@ -255,11 +267,13 @@
                             <span>MySQL</span>
                         </div>
                         <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 30%"></div>
+                            <div class="skill-bar" data-width="30%"></div>
                         </div>
                     </div>
                 </div>
-
+            </section>
+            
+            <section class="sidebar-box">
                 <h3 class="sidebar-title">Soft Skills</h3>
                 <p style="margin-bottom: 20px; color: #555;">
                     Possuo as seguintes competências:
@@ -272,7 +286,7 @@
                             <span>Comunicação</span>
                         </div>
                         <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 95%"></div>
+                            <div class="skill-bar" data-width="95%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -280,7 +294,7 @@
                             <span>Trabalho em Equipe</span>
                         </div>
                         <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 85%"></div>
+                            <div class="skill-bar" data-width="85%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -288,7 +302,7 @@
                             <span>Empatia e Colaboração</span>
                         </div>
                         <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 90%"></div>
+                            <div class="skill-bar" data-width="90%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -296,7 +310,7 @@
                             <span>Resolução de Problemas</span>
                         </div>
                         <div class="skill-bar-container">
-                            <div class="skill-bar" style="width: 80%"></div>
+                            <div class="skill-bar" data-width="80%"></div>
                         </div>
                     </div>
                 </div>
@@ -310,9 +324,9 @@
                         <span class="other-skill-tag">Trello</span>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="sidebar-box">
+            <section class="sidebar-box">
                 <h3 class="sidebar-title">Idiomas</h3>
                 <ul class="languages-list">
                     <li>
@@ -320,9 +334,8 @@
                         <span class="language-level">(B1 - Intermediário)</span>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </div>
+            </section>
+        </aside>
     </div>
 </body>
 
